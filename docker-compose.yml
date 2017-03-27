@@ -1,0 +1,9 @@
+amigos:
+  restart: always
+  build: .
+  ports:
+  - "80:3000"
+  environment:
+  - HOST=docker
+  volumes:
+  - /var/log/amigos:/app/log
